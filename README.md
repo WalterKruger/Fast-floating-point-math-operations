@@ -2,6 +2,8 @@
 A collection of functions that approximate math operations using floating-point hacks. 
 These exploit a floating-point's binary representation in combination with logarithmic identities to avoid costly operations.
 
+See `Deriving formulas.pdf` for an explanation for why these works.
+
 Note: **Not all approximations will be much faster than C’s standard offerings**. 
 The general power, log gamma, and binary log approximations are the only function substantially faster on my machine (Ryzen 5 5500), but it could be useful in embedded or RISC environments.
 
