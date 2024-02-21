@@ -22,7 +22,7 @@ Based on the famous “Fast inverse square root” algorithm.
 | Multiplication | `fastMultiply` | `a * b` |
 | Division | `fastDivision` | `a / b` |
 
-## Probability
+## Portability
 ### Floating-point format
 All method used only work for IEEE 754 binary types, or any format substantially similar. 
 These approximation assumes a normalized input/output so they will become less accurate the smaller the input when in the sub-normal range.
