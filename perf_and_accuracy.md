@@ -1,4 +1,4 @@
-## Performance and error
+# Performance and error
 Time taken to calculate 500 million results. Input was from an array of random valued floats (n=10k).
 Error was messured as maximum percentage error.
 
