@@ -10,12 +10,15 @@ The general power, log gamma, and binary log approximations are the only functio
 Based on the famous “Fast inverse square root” algorithm.
 
 ## Included operations
+See also: [Performance and accuracy](perf_and_accuracy.md)
+
 | Operation  | Fast approximation | Standard equivalent |
 | - | - | - |
 | $`\log_2{}`$  | `fastLog2`, `fastLog2Bits`, `fastLog2Alt`  | `log2f` |
 | $`\sqrt{n}`$ | `fastSqrRoot` `sqrRootSSE` | `sqrtf` |
 | $`\frac{1}{\sqrt{n}}`$  | `fastInvSqrRoot`, `fastInvSqrRoot_DBL`, `invSqrRootSSE`  | `1.0f / sqrtf` |
-| General power | `fastPow`, `fastPowAlt` | `powf` |
+| General power | `fastPow`, `fastPowAlt`, `fastPowAltAlt` | `powf` |
+| $`2^n`$ | `fastExp2`, `fastExp2_alt`, `fastExp2_bits` | `exp2f` |
 | 1/n<sup>th</sup> root | `fastInvRootApprox` | `powf(n, 1.0f / root)` |
 | $`\frac{1}{n}`$ | `fastReciprocal`, `reciprocalSSE` | `1.0f / n` |
 | $`\ln{(\Gamma{(n)})}`$ | `fastLogGamma` | `lgammaf` |
