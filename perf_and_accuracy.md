@@ -2,7 +2,9 @@
 Time taken to calculate 500 million results. Input was from an array of random valued floats (n=10k).
 Error was messured as maximum percentage error.
 
-'Perf' is seconds. Using GCC at `-O3`, `-march=native` (FMA3) or the default.
+The functions with the 'accurate' suffix and `fastPowViaLogf`  is from [Paul Mineiro](https://github.com/romeric/fastapprox) or [Ger Hobbelt](https://github.com/GerHobbelt/fastapprox).
+
+'Perf' is in seconds. Using GCC at `-O3`, `-march=native` (Ryzen 5 5500 with FMA3) or the default.
 ### Exponentiation
 Exponent: 1.45
 | Function | Perf <sub>(m=n)</sub> | Perf <sub>(m=x86-64)</sub> | Neg. error | Pos. error | Notes |
